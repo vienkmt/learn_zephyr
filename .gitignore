@@ -1,0 +1,20 @@
+# Kết quả build của Zephyr / CMake
+build/
+build-*/
+twister-out*/
+CMakeCache.txt
+CMakeFiles/
+
+# File sinh ra khi lập chỉ mục code
+.cache/
+compile_commands.json
+
+# Cấu hình máy local, không thuộc source
+.vscode/
+.idea/
+.codex/
+*.swp
+*~
+
+# macOS
+.DS_Store

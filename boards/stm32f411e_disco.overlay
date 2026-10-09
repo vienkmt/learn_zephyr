@@ -1,0 +1,12 @@
+/*
+ * LD6 xanh dương (PD15) dùng TIM4 kênh 4 để chỉnh độ sáng.
+ * Ba LED kia giữ GPIO, nên PWM chỉ lấy chân PD15.
+ * Prescaler 95 đưa clock đếm xuống khoảng 1 MHz, bước 10% nhìn rõ.
+ */
+&pwm4 {
+	pinctrl-0 = <&tim4_ch4_pd15>;
+};
+
+&timers4 {
+	st,prescaler = <95>;
+};
